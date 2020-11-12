@@ -1,11 +1,28 @@
-"Einfald myndgreining á LeNet
+"Einfald myndgreining" 
 
-1) Installtion 
+0) Pre-installation
+		
+	Athuga hvort skjákort sé á GPU eða ekki.
+	https://www.howtogeek.com/414201/how-to-check-what-graphics-card-gpu-is-in-your-pc/
 
+	Þarf að setja CUDA og cuDNN í Windows eða Linux (Ubuntu / ArchLinux) áðan en hefst að nota Deep Learning stuff. Nauðsynlegt að athuga hvort skjákort sé GPU eða ekki. 
+	https://towardsdatascience.com/installing-tensorflow-with-cuda-cudnn-and-gpu-support-on-windows-10-60693e46e781
+
+1) Installation 
+	
 	Python 3
 	Keras
 	TensorFlow 
 	Numpy 
+
+	CPU
+    python-m pip install -r requirements.txt 
+
+	GPU
+	python -m pip install -r requirements_gpu.txt
+
+
+	https://towardsdatascience.com/installing-tensorflow-with-cuda-cudnn-and-gpu-support-on-windows-10-60693e46e781
 
 2) Driver 
 

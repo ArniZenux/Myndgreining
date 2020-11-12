@@ -1,5 +1,8 @@
 import numpy as np 
 from keras import backend as K
+from keras import models
+from keras import layers
+
 import argparse
 
 train_dir = 'data/train'
@@ -25,15 +28,20 @@ test_datagen = ImageDataGenerator(
 	rescale = 1. / 255)
 
 train_generator = train_datagen.flow_from_directory(
-	'data/train_little', 
+	'data/train', 
 	target_size=(150,150), 
 	batch_size = batch_size, 
 	class_mode = 'binary')
 
 test_generator = test_datagen.flow_from_directory( 
-	'data/test_little', 
+	'data/test', 
 	target_size = (150, 150), 
 	batch_size = batch_size, 
 	class_mode = 'binary')
 
 
+model = models.Sequential()
+model.add()
+model.compile(optimizers='rmsprop',loss='binary_crossentropy', metrics=['accuracy'])
+
+history = model.fit(partial)
