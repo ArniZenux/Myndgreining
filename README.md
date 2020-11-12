@@ -1,4 +1,4 @@
-"Einfald myndgreining" 
+"Einfald myndgreining á LeNet
 
 1) Installtion 
 
@@ -22,9 +22,9 @@
 4) Train.py 
 	Þjálfa myndum í deep learning og býr módel til.
 
-	python3 train.py 
+	python3 train.py --model fani.model --dataset data
 
 5) Test.py 
 	Keyra á OpenCV með mynd og láta að þekkja íslenska fána.
 
-	python3 test.py --model fani.model --image data/flag/image01.jpg 
+	python3 test.py --model fani.model --image data/IcelandicFlag/image01.jpg 
