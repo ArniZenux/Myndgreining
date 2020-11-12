@@ -10,10 +10,10 @@
 
 1) Installation 
 	
-	Python 3
-	Keras
-	TensorFlow 
-	Numpy 
+	- Python 3
+	- Keras
+	- TensorFlow 
+	- Numpy 
 
 	CPU
     python-m pip install -r requirements.txt 
