@@ -5,14 +5,14 @@ import argparse
 train_dir = 'data/train'
 test_dir = 'data/test'
 
-# construct the argument parse and parse the arguments
-ap = argparse.ArgumentParser()
 ap.add_argument("-d", "--dataset", required=True,
 	help="path to input dataset")
 ap.add_argument("-m", "--model", required=True,
 	help="path to output model")
+"""
 ap.add_argument("-p", "--plot", type=str, default="plot.png",
 	help="path to output loss/accuracy plot")
+"""
 args = vars(ap.parse_args())
 
 train_datagen = ImageDataGenerator(
@@ -35,3 +35,5 @@ test_generator = test_datagen.flow_from_directory(
 	target_size = (150, 150), 
 	batch_size = batch_size, 
 	class_mode = 'binary')
+
+
