@@ -1,1 +1,5 @@
-"Myndgreind" 
+"Myndgreining á Fána"
+
+Flask 
+React 
+ 
